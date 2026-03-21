@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 	"os"
+	"os/exec"
+	"path/filepath"
 	"strings"
 	"time"
-
-	"github.com/cli/go-gh/v2/pkg/browser"
 	flag "github.com/spf13/pflag"
 	"golang.org/x/sync/errgroup"
 
@@ -188,8 +188,11 @@ Examples:
 	log.Logf("Dashboard written to: %s", opts.OutputFile)
 
 	if !opts.NoOpen {
-		b := browser.New("", os.Stdout, os.Stderr)
-		if err := b.Browse(opts.OutputFile); err != nil {
+		absPath, err := filepath.Abs(opts.OutputFile)
+		if err != nil {
+			absPath = opts.OutputFile
+		}
+		if err := exec.Command("open", absPath).Run(); err != nil {
 			log.Logf("  (could not open browser: %s)", err)
 		}
 	}
