@@ -2,7 +2,7 @@
 
 A GitHub CLI extension that gives you a single view of every PR that needs your attention — across teams, repos and orgs. No more tab-hopping between GitHub notifications, Slack pings, and email reminders. One dashboard, done.
 
-![Dashboard Screenshot](screenshot.png)
+![Dashboard Demo](demo.gif)
 
 ## Install & Start
 
