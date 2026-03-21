@@ -1,0 +1,7 @@
+{
+  "orgs": ["my-org", "other-org"],
+  "ignored_teams": [],
+  "extra_bot_usernames": [],
+  "output_file": "dashboard.html",
+  "search_limit": 100
+}
