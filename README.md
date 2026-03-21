@@ -2,6 +2,8 @@
 
 A GitHub CLI extension that generates a self-contained PR review dashboard. Helps you stay on top of code reviews across multiple GitHub organizations.
 
+![Dashboard Screenshot](screenshot.png)
+
 ## Install & Start
 
 ```bash
