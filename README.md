@@ -1,6 +1,6 @@
 # gh-pr-dashboard
 
-A GitHub CLI extension that generates a self-contained PR review dashboard. Helps you stay on top of code reviews across multiple GitHub organizations.
+A GitHub CLI extension that gives you a single view of every PR that needs your attention — across teams, repos and orgs. No more tab-hopping between GitHub notifications, Slack pings, and email reminders. One dashboard, done.
 
 ![Dashboard Screenshot](screenshot.png)
 
