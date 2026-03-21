@@ -5,7 +5,7 @@ A GitHub CLI extension that generates a self-contained PR review dashboard. Help
 ## Install & Start
 
 ```bash
-gh extension install bajaj6/gh-pr-dashboard
+gh extension install deliveroo/gh-pr-dashboard
 # Live dashboard
 gh pr-dashboard --serve
 ```
@@ -75,13 +75,15 @@ You can create this file manually, or run `gh pr-dashboard --init` to generate a
 
 CLI flags override config values for `orgs`, `output_file`, and `search_limit`.
 
+> **Note:** In serve mode, config is read at startup. Restart the server after editing `config.json` for changes to take effect.
+
 ## Dashboard Layout
 
 ### Pending Reviews
 - **Direct review requests** — PRs where you are personally requested
 - **Team review requests** — PRs where your teams are requested (with team toggle filters)
 - **Changes requested** — PRs where you previously requested changes
-- **Bot PRs** — Bot-authored PRs needing review (collapsed by default)
+- **Bot (Automated) PRs** — Bot-authored PRs needing review (collapsed by default)
 - **Drafts** — Draft PRs where you are a reviewer (collapsed by default)
 
 ### Approved Reviews
