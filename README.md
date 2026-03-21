@@ -30,6 +30,25 @@ Or, see the [installation instructions](https://github.com/cli/cli#installation)
 gh extension upgrade pr-dashboard
 ```
 
+## Dashboard Layout
+
+### Pending Reviews
+- **Direct review requests** — PRs where you are personally requested
+- **Team review requests** — PRs where your teams are requested (with team toggle filters)
+- **Changes requested** — PRs where you previously requested changes
+- **Bot (Automated) PRs** — Bot-authored PRs needing review (collapsed by default)
+- **Drafts** — Draft PRs where you are a reviewer (collapsed by default)
+
+### Approved Reviews
+- **Approved by me** — PRs you have approved
+- **Approved by team** — PRs your teams approved
+
+### My Pull Requests
+- **Approved** — Your PRs that are approved and ready to merge
+- **Changes requested** — Your PRs where reviewers requested changes
+- **Open** — Your PRs awaiting review
+- **Drafts** — Your draft PRs
+
 ## Configuration
 
 Optionally create a config file at `~/.config/gh-pr-dashboard/config.json` to customize behavior:
@@ -78,25 +97,6 @@ You can create this file manually, or run `gh pr-dashboard --init` to generate a
 CLI flags override config values for `orgs`, `output_file`, and `search_limit`.
 
 > **Note:** In serve mode, config is read at startup. Restart the server after editing `config.json` for changes to take effect.
-
-## Dashboard Layout
-
-### Pending Reviews
-- **Direct review requests** — PRs where you are personally requested
-- **Team review requests** — PRs where your teams are requested (with team toggle filters)
-- **Changes requested** — PRs where you previously requested changes
-- **Bot (Automated) PRs** — Bot-authored PRs needing review (collapsed by default)
-- **Drafts** — Draft PRs where you are a reviewer (collapsed by default)
-
-### Approved Reviews
-- **Approved by me** — PRs you have approved
-- **Approved by team** — PRs your teams approved
-
-### My Pull Requests
-- **Approved** — Your PRs that are approved and ready to merge
-- **Changes requested** — Your PRs where reviewers requested changes
-- **Open** — Your PRs awaiting review
-- **Drafts** — Your draft PRs
 
 ## Features
 
