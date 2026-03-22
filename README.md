@@ -7,7 +7,7 @@ A GitHub CLI extension that gives you a single view of every PR that needs your 
 ## Install & Start
 
 ```bash
-gh extension install deliveroo/gh-pr-dashboard
+gh extension install bajaj6/gh-pr-dashboard
 # Live dashboard
 gh pr-dashboard --serve
 ```
